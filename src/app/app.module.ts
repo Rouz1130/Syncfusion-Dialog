@@ -9,6 +9,7 @@ import { EJAngular2Module } from 'ej-angular2';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GridComponent } from './grid/grid.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 import { rootRouterConfig } from './app.routes';
 
@@ -28,7 +29,7 @@ class CustomErrorHandler implements ErrorHandler {
     BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(rootRouterConfig, { useHash: true }), EJAngular2Module.forRoot()
   ],
   declarations: [
-    AppComponent, HomeComponent, GridComponent
+    AppComponent, HomeComponent, GridComponent, DialogComponent
   ],
   bootstrap: [AppComponent]
 })
